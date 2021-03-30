@@ -1,0 +1,21 @@
+<div id="scrollobj" style="white-space:nowrap;overflow:hidden;width:1100px;"><span>
+<img src="http://ziologic.com/wp-content/uploads/2021/03/2-2.jpg" alt="4" width="300" height="200">
+<img src="http://ziologic.com/wp-content/uploads/2021/03/logo.jpg" alt="4" width="300" height="200">
+<img src="http://ziologic.com/wp-content/uploads/2021/03/4.jpg" alt="4" width="300" height="200">
+<img src="http://ziologic.com/wp-content/uploads/2021/03/3-1.jpg" alt="4" width="300" height="200">
+<img src="http://ziologic.com/wp-content/uploads/2021/03/311815368845-copy.jpg" alt="4" width="300" height="200">
+<img src="http://ziologic.com/wp-content/uploads/2021/03/poster1.jpg" alt="4" width="300" height="200">
+</span></div>
+<script language="javascript" type="text/javascript">
+<!--
+function scroll(obj) {
+var tmp = (obj.scrollLeft)++;
+//当滚动条到达右边顶端时
+if (obj.scrollLeft==tmp) obj.innerHTML += obj.innerHTML;
+//当滚动条滚动了初始内容的宽度时滚动条回到最左端
+if (obj.scrollLeft>=obj.firstChild.offsetWidth) obj.scrollLeft=0;
+}
+var speed = 21
+setInterval("scroll(document.getElementById('scrollobj'))",speed);
+//-->
+</script>
